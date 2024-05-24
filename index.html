@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Hisham's Quiz Application</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hisham's Quiz App</h1>
+            <hr>
+        </header>
+        <div class="panel">
+            <div class="question" id="ques"></div>
+            <div class="options" id="opt"></div>
+            <button onclick="checkAns()" id="btn">SUBMIT</button>
+            <div id="feedback" class="feedback"></div>
+            <div id="score"></div>
+            <div class="btn-container">
+                <button onclick="previousQuestion()" id="prevBtn">&#8592;</button>
+                <button onclick="nextQuestion()" id="nextBtn">&#8594;</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

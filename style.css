@@ -1,0 +1,157 @@
+/* Global Styles */
+body {
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #be0000;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header hr {
+    width: 100%;
+    border: 0;
+    border-top: 2px solid #4f98c2;
+    margin: 10px auto;
+}
+
+/* Panel Styles */
+.panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.question {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.options .option {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options .option:hover {
+    background: #e1e1e1;
+}
+
+.options .option.selected {
+    background: #d1d1d1 !important;
+}
+
+.options input[type="radio"] {
+    display: none;
+}
+
+.options label {
+    cursor: pointer;
+    font-size: 1em;
+    color: #333;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background: #4f98c2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #3f78a2;
+}
+
+.feedback {
+    margin-top: 20px;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    width: auto;
+}
+
+.feedback.correct {
+    border: 2px solid green;
+    background-color: #e1f5e1;
+    color: green;
+}
+
+.feedback.wrong {
+    border: 2px solid red;
+    background-color: #f5e1e1;
+    color: red;
+}
+
+#score {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: darkslategray;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.btn-container button {
+    font-size: 1.5em;
+    padding: 5px 15px;
+    margin: 0;
+}
